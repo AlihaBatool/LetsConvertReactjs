@@ -55,7 +55,7 @@ export default function SplitPdfPage() {
               {!file ? (
                 <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center hover:border-yellow-500 transition-colors mb-6">
                   <Upload className="h-12 w-12 text-yellow-600 mx-auto mb-4" />
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2 px-8 py-3">Select a PDF file</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Select a PDF file</h3>
                   <p className="text-gray-600 mb-4">Choose the PDF you want to split</p>
                   <input
                     type="file"
@@ -64,7 +64,7 @@ export default function SplitPdfPage() {
                     onChange={handleFileUpload}
                     className="hidden"
                   />
-                  <Button className="bg-yellow-600 hover:bg-yellow-700 text-white" onClick={handleButtonClick}>
+                  <Button className="px-8 py-3 bg-yellow-600 hover:bg-yellow-700 text-white" onClick={handleButtonClick}>
                     Choose PDF
                   </Button>
                 </div>
